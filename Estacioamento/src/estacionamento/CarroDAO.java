@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package estacionamento;
+import java.util.*;
+import java.sql.*;
 
-/**
- *
- * @author LABORATORIO_INFO
- */
 public class CarroDAO {
+    private Connection con;
     
+    /*public CarroDAO(Connection con) {
+        setCon(con);
+    }*/
+
+    public Connection getCon(){
+        return con;
+    }
+    
+    public CarroDAO(Connection con) {
+        this.con = con;
+    }
+
 }
